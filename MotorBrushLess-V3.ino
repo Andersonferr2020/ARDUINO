@@ -2,6 +2,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
+//-------------------------Parâmetros de configuração do dispositivo  -------------------------------------------------
+
 #define pinPWM 9// define a porta que receberá o sinal de PWM
 
 Servo esc; 
@@ -24,6 +26,8 @@ int pwmMin = 1049;  // PWM correspondente à rotação mínima
 
 // Configuração do display I2C - Endereço 0x27 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+//----------------------------------------------------------------------------------------------------------
 
 void setup() {
   Serial.begin(115200);//configura BoudRate da comunicação serial
